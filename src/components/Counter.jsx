@@ -28,20 +28,7 @@ export default class Counter extends Component {
               >
                 <Image width={200} src={this.props.counter.image} />
                 <p></p>
-                {/* <button
-                  onClick={() => this.props.onDecrement(counter)}
-                  className="btn btn-secondary ms-1"
-                  disabled={counter.value === 0}
-                >
-                  -
-                </button>
-                <span className={this.getClassName()}>{this.formatText()}</span>
-                <button
-                  onClick={() => this.props.onIncrement(counter)}
-                  className="btn btn-primary "
-                >
-                  +
-                </button> */}
+                
                 <Button
                   type="primary"
                   className="ms-2"
