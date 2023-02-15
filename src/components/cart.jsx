@@ -30,7 +30,7 @@ export default class Cart extends Component {
         <div className="m-4">
           {
             <>
-              <a href={this.props.cart.image}>{this.getName()}</a>
+              <h6 {...this.props.cart.image}>{this.getName()}</h6>
 
               <br />
               <img src={this.props.cart.image} width="200"></img>

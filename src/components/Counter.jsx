@@ -12,9 +12,10 @@ export default class Counter extends Component {
     return (
       <>
         {children}
-        <div className="m-4  ">
+        <div className="m-4" >
           {
             <>
+            <div style={{ display: 'inline-block', justifyContent: 'center' }}>
               <Card
                 title={this.getName()}
                 bordered={true}
@@ -27,6 +28,20 @@ export default class Counter extends Component {
               >
                 <Image width={200} src={this.props.counter.image} />
                 <p></p>
+                {/* <button
+                  onClick={() => this.props.onDecrement(counter)}
+                  className="btn btn-secondary ms-1"
+                  disabled={counter.value === 0}
+                >
+                  -
+                </button>
+                <span className={this.getClassName()}>{this.formatText()}</span>
+                <button
+                  onClick={() => this.props.onIncrement(counter)}
+                  className="btn btn-primary "
+                >
+                  +
+                </button> */}
                 <Button
                   type="primary"
                   className="ms-2"
@@ -35,6 +50,7 @@ export default class Counter extends Component {
                   Add to Cart<i className="fa-solid fa-cart-plus ms-2"></i>
                 </Button>
               </Card>
+              </div>
             </>
           }
         </div>
